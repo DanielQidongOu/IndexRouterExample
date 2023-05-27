@@ -1,0 +1,56 @@
+.container {
+    width: 600px;
+    height: 600px;
+    overflow: scroll;
+    margin: 0 auto;
+    background-color: #7986cb;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h3,
+.user_form,
+.btn_box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.user_form {
+    margin-bottom: 1rem;
+}
+
+ul li {
+    list-style: none;
+    counter-increment: item;
+    margin-bottom: 1rem;
+}
+
+ul li::before {
+    content: counter(item);
+    background-color: #f9dd94;
+    color: darkblue;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin-right: 1rem;
+    border-radius: 3px;
+}
+
+button {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    background: #c2d352;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #434343;
+    transition: all 0.4s ease;
+}
